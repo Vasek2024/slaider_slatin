@@ -1,0 +1,166 @@
+.vystovka {
+    padding: 107px 100px 416px 100px;
+    background: #131313;
+    display: flex;
+    flex-direction: row;
+}
+
+.hidden {
+    display: none;
+}
+
+.block {
+    display: block;
+}
+
+.vystovka__description {
+    margin: 60px 12px 0 0;
+    width: 450px;
+}
+
+.description__title {
+    margin-bottom: 34px;
+    font-weight: 400;
+    font-size: 27px;
+    line-height: 139%;
+    letter-spacing: -0.07em;
+    text-transform: uppercase;
+    color: #e3b873;
+}
+
+.vystovka__description p {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 191%;
+    color: #fff;
+}
+
+.vystovka__slider {
+    display: none;
+}
+
+.description__sample {
+    margin: 41px 0 70px 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    row-gap: 34px;
+}
+
+.description__sample-siti,
+.description__sample-time,
+.description__sample-apartment,
+.description__sample-cost {
+    width: 160px;
+    display: inline-block;
+}
+
+.description__siti,
+.description__time,
+.description__apartment,
+.description__cost {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 139%;
+    text-transform: uppercase;
+    color: #e3b873;
+}
+
+.description__revers {
+    margin-top: 30px;
+    width: 200px;
+    height: 14px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.description__revers-pagination {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.description__revers-pagination img {
+    cursor: pointer;
+}
+
+.description__revers-btn {
+    /* border: 1px solid red; */
+    border-radius: 50px;
+    cursor: pointer;
+    background: #131313;
+}
+
+.description__revers-btn:hover {
+    background: #e3b873;
+}
+
+.description__revers-active,
+.result__list-active {
+    background: #ce0d0d;
+}
+
+.active {
+    background: #ce0d0d;
+}
+
+/* .description__revers-pagination img:hover{
+    color: #e3b873;
+} */
+
+.description__revers-forward,
+.description__revers-back {
+    cursor: pointer;
+}
+
+/* .description__revers-forward:hover,
+.description__revers-back:hover{
+    color: #e3b873;
+} */
+
+
+.vystovka__result {
+    width: 684px;
+}
+
+.result__nav {
+    margin-bottom: 45px;
+    display: flex;
+}
+
+.result__nav li {
+    margin-right: 60px;
+}
+
+.result__nav a {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 139%;
+    text-transform: uppercase;
+    color: rgba(255, 255, 255, 0.3);
+    text-decoration: none;
+}
+
+.result__nav a:hover {
+    color: #e3b873;
+    text-decoration: 2px solid #e3b873;
+}
+
+.result__img {
+    width: 100%;
+}
+
+.result__img {
+    animation: fade 0.8s;
+}
+
+@keyframes fade {
+    0% {
+        opacity: 0.3;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}

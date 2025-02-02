@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style/style.css">
+    <link rel="stylesheet" href="./style/reset.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <section class="vystovka">
+        <div class="vystovka__description description">
+            <h2 class="description__title">Completed projects</h2>
+            <p>Only a small part of the work performed by our company is presented on the site. For 14 years on in the
+                construction </p>
+            <p>market we have made happy more than 1000 families</p>
+
+            <!-- блок для мобилки -->
+            <div class="vystovka__slider slider">
+                <h3 class="vystovka__slider-tile">We realize your wildest fantasies</h3>
+                <div class="vystovka__slider-direction">
+                    <img class="vystovka__slider-left" src="./image/svg/mob_r.svg" alt="">
+                    <img class="vystovka__slider-right" src="./image/svg/mob_l.svg" alt="">
+                </div>
+            </div>
+
+            <div class="description__sample">
+                <!-- обернуть отдельно -->
+                <div class="description__sample-siti">
+                    <h4 class="description__siti">City:</h4>
+                    <p>Rostov-on-Don</p>
+                    <p>LCD admiral</p>
+                </div>
+                <!-- обернуть отдельно -->
+                <div class="description__sample-time">
+                    <h4 class="description__time">Repair time:</h4>
+                    <p>3.5 months</p>
+                </div>
+                <!-- обернуть отдельно -->
+                <div class="description__sample-apartment">
+                    <h4 class="description__apartment">apartment area:</h4>
+                    <p>81 m2</p>
+                </div>
+                <!-- обернуть отдельно -->
+                <div class="description__sample-cost">
+                    <h4 class="description__cost">Repair Cost:</h4>
+                    <p>Upon request</p>
+                </div>
+                <div class="description__revers">
+                    <img class="description__revers-forward" src="./image/svg/left.svg" alt="Мотать назад">
+                    <div class="description__revers-pagination">
+                        <button class="description__revers-btn active"></button>
+                        <button class="description__revers-btn"></button>
+                        <button class="description__revers-btn"></button>
+                        <!-- <img class="description__revers-one" src="./image/svg/circle.svg" alt="Слайд 1">
+                        <img class="description__revers-two" src="./image/svg/circle.svg" alt="Слайд 2">
+                        <img class="description__revers-three" src="./image/svg/circle.svg" alt="Слайд 3"> -->
+                    </div>
+                    <img class="description__revers-back" src="./image/svg/right.svg" alt="Мотать вперёд">
+                </div>
+            </div>
+            <!-- ПЕРЕМОТКВ лево право -->
+            <!-- <div class="description__revers"></div> -->
+        </div>
+        <div class="vystovka__result result">
+            <ul class="result__nav">
+                <!-- <li><button>Rostov-on-Don, Admiral</button></li>
+                <li><button>Sochi Thieves</button></li>
+                <li><button>Rostov-on-Don Patriotic</button></li> -->
+                <li><a class="result__list active" href="#">Rostov-on-Don, Admiral</a></li>
+                <li><a class="result__list" href="#">Sochi Thieves</a></li>
+                <li><a class="result__list" href="#">Rostov-on-Don Patriotic</a></li>
+            </ul>
+            <div class="result__slaider">
+                <img class="result__img" src="./image/jpg/image 2.1.jpg" alt="Зал">
+                <img class="result__img" src="./image/jpg/image 2.jpg" alt="Приёмная">
+                <img class="result__img" src="./image/jpg/image 3.jpg" alt="Студия">
+            </div>
+        </div>
+    </section>
+    <script src="./js/slaider.js"></script>
+</body>
+
+</html>
