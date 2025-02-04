@@ -4,7 +4,14 @@ const slidesDots = document.getElementsByClassName('result__img'),
     wrappetDots = document.querySelector('.description__revers-pagination'),
     dots = document.getElementsByClassName('description__revers-btn'),
     wrappelincs = document.querySelector('.result__nav'),
-    navLincs = document.getElementsByClassName('result__list')
+    navLincs = document.getElementsByClassName('result__list'),
+
+    sampleSiti = document.querySelector('.description__sample-siti'),
+    sampleTime = document.querySelector('.description__sample-time'),
+    sampleApartment = document.querySelector('description__sample-apartment'),
+    sampleCost = document.querySelector('description__sample-cost')
+// console.log(sampleSiti.append(`<p>`))
+// sampleSiti.createElement('button')
 let slideIndex = 1
 
 // Вызов функции

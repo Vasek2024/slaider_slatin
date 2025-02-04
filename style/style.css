@@ -93,7 +93,7 @@
 }
 
 .description__revers-btn:hover {
-    background: #e3b873;
+    background: #fff;
 }
 .active {
     background: #fff;
@@ -126,7 +126,7 @@
 
 .result__list:hover {
     color: #e3b873;
-    text-decoration: 2px solid #e3b873;
+    text-decoration: underline;
 }
 .result__list-active{
     color: #e3b873;
