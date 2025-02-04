@@ -95,31 +95,13 @@
 .description__revers-btn:hover {
     background: #e3b873;
 }
-
-.description__revers-active,
-.result__list-active {
-    background: #ce0d0d;
-}
-
 .active {
-    background: #ce0d0d;
+    background: #fff;
 }
-
-/* .description__revers-pagination img:hover{
-    color: #e3b873;
-} */
-
 .description__revers-forward,
 .description__revers-back {
     cursor: pointer;
 }
-
-/* .description__revers-forward:hover,
-.description__revers-back:hover{
-    color: #e3b873;
-} */
-
-
 .vystovka__result {
     width: 684px;
 }
@@ -133,7 +115,7 @@
     margin-right: 60px;
 }
 
-.result__nav a {
+.result__list {
     font-weight: 400;
     font-size: 14px;
     line-height: 139%;
@@ -142,9 +124,13 @@
     text-decoration: none;
 }
 
-.result__nav a:hover {
+.result__list:hover {
     color: #e3b873;
     text-decoration: 2px solid #e3b873;
+}
+.result__list-active{
+    color: #e3b873;
+    text-decoration: underline;
 }
 
 .result__img {

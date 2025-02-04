@@ -24,11 +24,11 @@ function showSlides(index) {
         dots[i].classList.remove('active')// удаляем класс активности у кнопак
     }
     for (let i = 0; i < navLincs.length; i++) {// проходим массивом по ссылкам
-        navLincs[i].classList.remove('active')// удаляем класс активности у ссылок
+        navLincs[i].classList.remove('result__list-active')// удаляем класс активности у ссылок
     }
     slidesDots[slideIndex - 1].style.display = 'block'// задаём стиль слайду (показываем)
     dots[slideIndex - 1].classList.add('active')// задаём класс активности у кнопаки
-    navLincs[slideIndex - 1].classList.add('active')// задаём класс активности у ссылоки
+    navLincs[slideIndex - 1].classList.add('result__list-active')// задаём класс активности у ссылоки
 }
 
 function pluseSlaide(index) {// прибавить слайд
