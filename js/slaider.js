@@ -4,12 +4,12 @@ const slidesDots = document.getElementsByClassName('result__img'),
     wrappetDots = document.querySelector('.description__revers-pagination'),
     dots = document.getElementsByClassName('description__revers-btn'),
     wrappelincs = document.querySelector('.result__nav'),
-    navLincs = document.getElementsByClassName('result__list'),
+    navLincs = document.getElementsByClassName('result__list')
 
-    sampleSiti = document.querySelector('.description__sample-siti'),
-    sampleTime = document.querySelector('.description__sample-time'),
-    sampleApartment = document.querySelector('description__sample-apartment'),
-    sampleCost = document.querySelector('description__sample-cost')
+// sampleSiti = document.querySelector('.description__sample-siti'),
+// sampleTime = document.querySelector('.description__sample-time'),
+// sampleApartment = document.querySelector('description__sample-apartment'),
+// sampleCost = document.querySelector('description__sample-cost')
 // console.log(sampleSiti.append(`<p>`))
 // sampleSiti.createElement('button')
 let slideIndex = 1
@@ -33,6 +33,55 @@ function showSlides(index) {
     for (let i = 0; i < navLincs.length; i++) {// проходим массивом по ссылкам
         navLincs[i].classList.remove('result__list-active')// удаляем класс активности у ссылок
     }
+
+
+    const sampleSiti = document.querySelector('.description__sample-siti'),
+        sampleApartment = document.querySelector('.description__sample-apartment'),
+        sampleTime = document.querySelector('.description__sample-time'),
+        sampleCost = document.querySelector('.description__sample-cost')
+
+        let sitiParagraphOne = document.createElement('p'),
+        sitiParagraphTwo = document.createElement('p'),
+        apartmentParagraphOne = document.createElement('p'),
+        apartmentParagraphTwo = document.createElement('p'),
+        timeParagraphOne = document.createElement('p'),
+        timeParagraphTwo = document.createElement('p'),
+        costParagraphOne = document.createElement('p'),
+        costParagraphTwo = document.createElement('p')
+
+    switch (slideIndex) {
+        case 1:
+            sitiParagraphOne.textContent = 'Rostov-on-Don'
+            sitiParagraphTwo.textContent = 'LCD admiral'
+            sampleSiti.append(sitiParagraphOne)
+            sampleSiti.append(sitiParagraphTwo)
+
+            apartmentParagraphOne.textContent = '81 m2'
+            // apartmentParagraphTwo.textContent = ''
+            sampleApartment.appendChild(apartmentParagraphOne)
+            // sampleApartment.appendChild(apartmentParagraphTwo)
+
+            timeParagraphOne.textContent = '3.5 months'
+            // timeParagraphTwo.textContent = ''
+            sampleTime.appendChild(timeParagraphOne)
+            // sampleTime.appendChild(timeParagraphTwo)
+
+            costParagraphOne.textContent = 'Upon request'
+            // costParagraphTwo.textContent = ''
+            sampleCost.appendChild(costParagraphOne)
+            // sampleCost.appendChild(costParagraphTwo)
+            break;
+        case 2:
+            costParagraphOne.textContent = 'Upon 111111'
+            // costParagraphTwo.textContent = ''
+            sampleCost.appendChild(costParagraphOne)
+            // sampleCost.appendChild(costParagraphTwo)
+            break;
+        case 3:
+
+            break;
+    }
+
     slidesDots[slideIndex - 1].style.display = 'block'// задаём стиль слайду (показываем)
     dots[slideIndex - 1].classList.add('active')// задаём класс активности у кнопаки
     navLincs[slideIndex - 1].classList.add('result__list-active')// задаём класс активности у ссылоки
