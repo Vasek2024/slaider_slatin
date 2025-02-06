@@ -95,13 +95,16 @@
 .description__revers-btn:hover {
     background: #fff;
 }
+
 .active {
     background: #fff;
 }
+
 .description__revers-forward,
 .description__revers-back {
     cursor: pointer;
 }
+
 .vystovka__result {
     width: 684px;
 }
@@ -128,7 +131,8 @@
     color: #e3b873;
     text-decoration: underline;
 }
-.result__list-active{
+
+.result__list-active {
     color: #e3b873;
     text-decoration: underline;
 }

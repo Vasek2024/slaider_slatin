@@ -34,51 +34,30 @@ function showSlides(index) {
         navLincs[i].classList.remove('result__list-active')// удаляем класс активности у ссылок
     }
 
+    // Находим теги Р
+    const sampleSiti = document.querySelector('.description__sample-siti p'),
+        sampleApartment = document.querySelector('.description__sample-apartment p'),
+        sampleTime = document.querySelector('.description__sample-time p'),
+        sampleCost = document.querySelector('.description__sample-cost p')
 
-    const sampleSiti = document.querySelector('.description__sample-siti'),
-        sampleApartment = document.querySelector('.description__sample-apartment'),
-        sampleTime = document.querySelector('.description__sample-time'),
-        sampleCost = document.querySelector('.description__sample-cost')
-
-        let sitiParagraphOne = document.createElement('p'),
-        sitiParagraphTwo = document.createElement('p'),
-        apartmentParagraphOne = document.createElement('p'),
-        apartmentParagraphTwo = document.createElement('p'),
-        timeParagraphOne = document.createElement('p'),
-        timeParagraphTwo = document.createElement('p'),
-        costParagraphOne = document.createElement('p'),
-        costParagraphTwo = document.createElement('p')
-
-    switch (slideIndex) {
+    switch (slideIndex) {// По индексу слайда меняем значения в теги Р
         case 1:
-            sitiParagraphOne.textContent = 'Rostov-on-Don'
-            sitiParagraphTwo.textContent = 'LCD admiral'
-            sampleSiti.append(sitiParagraphOne)
-            sampleSiti.append(sitiParagraphTwo)
-
-            apartmentParagraphOne.textContent = '81 m2'
-            // apartmentParagraphTwo.textContent = ''
-            sampleApartment.appendChild(apartmentParagraphOne)
-            // sampleApartment.appendChild(apartmentParagraphTwo)
-
-            timeParagraphOne.textContent = '3.5 months'
-            // timeParagraphTwo.textContent = ''
-            sampleTime.appendChild(timeParagraphOne)
-            // sampleTime.appendChild(timeParagraphTwo)
-
-            costParagraphOne.textContent = 'Upon request'
-            // costParagraphTwo.textContent = ''
-            sampleCost.appendChild(costParagraphOne)
-            // sampleCost.appendChild(costParagraphTwo)
+            sampleSiti.innerHTML = `Rostov-on-Don <br> LCD admiral`
+            sampleApartment.innerHTML = `81 m2`
+            sampleTime.innerHTML = `3.5 months`
+            sampleCost.innerHTML = `Upon request`
             break;
         case 2:
-            costParagraphOne.textContent = 'Upon 111111'
-            // costParagraphTwo.textContent = ''
-            sampleCost.appendChild(costParagraphOne)
-            // sampleCost.appendChild(costParagraphTwo)
+            sampleSiti.innerHTML = `Sochi <br> Thieves`
+            sampleApartment.innerHTML = `105 m2`
+            sampleTime.innerHTML = `4 months`
+            sampleCost.innerHTML = `Upon request`
             break;
         case 3:
-
+            sampleSiti.innerHTML = `Rostov-on-Don <br> Patriotic`
+            sampleApartment.innerHTML = `93 m2`
+            sampleTime.innerHTML = `3 months`
+            sampleCost.innerHTML = `Upon request`
             break;
     }
 
